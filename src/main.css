@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background: linear-gradient(to left, #807878, #7558c3, #312553) no-repeat  fixed;  
+} 

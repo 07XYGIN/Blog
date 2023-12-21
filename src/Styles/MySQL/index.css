@@ -1,0 +1,33 @@
+.con {
+  width: 100%;
+  background-color: #9eaab5;
+}
+
+.con .p {
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.con .date {
+  font-size: 12px;
+  width: 200px;
+  height: 10px;
+  position: relative;
+  top: -6px;
+  left: 220px;
+}
+
+.con .text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.con .text h2 {
+  margin-bottom: 10px;
+}
+
+.con .text p {
+  margin-bottom: 10px;
+}

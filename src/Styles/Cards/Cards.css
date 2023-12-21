@@ -1,0 +1,16 @@
+.Cards {
+  width: 100%;
+  margin-top: 10px;
+}
+.k {
+  background: linear-gradient(to left, #a98888, #aba3a3, #a49bbe);
+}
+.time {
+  width: 200px;
+  font-size: 12px;
+  position: absolute;
+  left: 1070px;
+}
+#b{
+  width: 100%;
+}
