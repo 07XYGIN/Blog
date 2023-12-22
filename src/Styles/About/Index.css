@@ -54,8 +54,47 @@
 
 .ul li {
   margin: 10px 0 0 10px;
-  color: #000;
 }
-.ul li a{
-  color: #000;
+
+@media (max-width: 500px) {
+  .about {
+    display: none;
+  }
+  .box {
+    color: aqua;
+  }
+  .me {
+    color: aqua;
+  }
+  .me .p4 {
+    color: aqua;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  .me .ul {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .me {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .me {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .me {
+    display: none;
+  }
 }

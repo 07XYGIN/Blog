@@ -1,11 +1,33 @@
 import React from 'react';
 import { useState } from 'react';
-import { Affix, Button, Drawer } from 'antd';
-import { MenuFoldOutlined, HomeOutlined, UserOutlined, ProfileOutlined, LikeOutlined, RedditOutlined, ClockCircleOutlined, DownOutlined } from '@ant-design/icons'
+import { Affix, Button, Drawer, Dropdown, Space } from 'antd';
+import { CaretDownOutlined, HomeOutlined, UserOutlined, ProfileOutlined, LikeOutlined, RedditOutlined, ClockCircleOutlined, DownOutlined } from '@ant-design/icons'
 import { Link, Outlet } from 'react-router-dom'
 import '../Styles/Index/Index.css'
 import img from '../Assets/Logo.jpg'
 const App = () => {
+  const items = [
+    {
+      label:<Link> <HomeOutlined twoToneColor="#eb2f96" />首页</Link>,
+      key: '0',
+    },
+    {
+      label:<Link to='article'><ProfileOutlined />文章</Link>,
+      key: '1',
+    },
+    {
+      label:<Link to='note'><LikeOutlined />笔记</Link>,
+      key: '2',
+    },
+    {
+      label:<Link to='renew'><ClockCircleOutlined />最近更新</Link>,
+      key: '3',
+    },
+    {
+      label:<Link to='about'><UserOutlined />关于</Link>,
+      key: '4',
+    },
+  ];
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -23,31 +45,13 @@ const App = () => {
         <div className="yd">
           <h1>MX</h1>
           <div className="yd-b">
-            <Button type="primary" onClick={showDrawer}>
-            <MenuFoldOutlined />
-            </Button>
-            <Drawer title="" placement="right" onClose={onClose} open={open} rootClassName='dr'>
-            <ul id='lis'>
-                <li>
-                  <Link> <HomeOutlined twoToneColor="#eb2f96" />首页</Link>
-                </li>
-                <li>
-                  <Link to='article'><ProfileOutlined />文章</Link>
-                </li>
-                <li>
-                  <Link to='note'><LikeOutlined />笔记</Link>
-                </li>
-                <li>
-                  <Link to='renew'><ClockCircleOutlined />最近更新</Link>
-                </li>
-                <li>
-                  <Link to='demo'><RedditOutlined /><span id='spantext'>Demo</span></Link>
-                </li>
-                <li>
-                  <Link to='about'><UserOutlined />关于</Link>
-                </li>
-              </ul>
-            </Drawer>
+            <Dropdown menu={{ items }} trigger={['click']}>
+              <a onClick={(e) => e.preventDefault()}>
+                <Space>
+                <CaretDownOutlined />
+                </Space>
+              </a>
+            </Dropdown>
           </div>
         </div>
         <Affix offsetTop={top} id='A'>

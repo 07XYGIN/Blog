@@ -41,14 +41,6 @@ const App = () => {
             </Card>
           </Space>
         </Link>
-        <Link to='/url'>
-          <Space direction="vertical" size={16} className='right-box'>
-            <Card title={`标题`} hoverable={true} className='ks'>
-              <p className='date'>更新时间: 2023-12-13</p>
-              <p className="date"></p>
-            </Card>
-          </Space>
-        </Link>
       </div>
       <div className="m">
         <Affix offsetTop={top} id="Aff">
@@ -87,24 +79,16 @@ const App = () => {
           </div>
         </Affix>
         <div className="right">
-          <Link to='/url'>
+          <Link to='/MySQL'>
             <Space direction="vertical" size={16} className='right-box'>
-              <Card title={`标题`} hoverable={true} className='k'>
-                <p className='date'>更新时间: 2023-12-13</p>
-                <p className="date"></p>
-              </Card>
-            </Space>
-          </Link>
-          <Link to='/url'>
-            <Space direction="vertical" size={16} className='right-box'>
-              <Card title={`标题`} hoverable={true} className='k'>
-                内容
-              </Card>
+            <Card title={`MySQL基础`} hoverable={true} className='k'>
+              <p className="d"></p>
+              <p className='date'>更新时间: 2023-12-19</p>
+            </Card>
             </Space>
           </Link>
         </div>
       </div>
-
     </div>
   );
 };

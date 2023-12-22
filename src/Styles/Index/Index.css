@@ -61,6 +61,25 @@ html {
 }
 
 @media (max-width: 500px) {
+  .yd-b {
+    color: #fff;
+    margin: 0 30px;
+    width: 16px;
+    height: 16px;
+  }
+  .yd-b span {
+    color: #fff !important;
+  }
+  .yd-b span svg {
+    width: 20px;
+    height: 20px;
+  }
+  .ant-drawer {
+    max-width: 100vw;
+  }
+  .dr {
+    width: 100px;
+  }
   #lis {
     width: 100%;
     height: 20rem;
@@ -174,7 +193,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1199px) {
   .ms {
     display: none;
   }
