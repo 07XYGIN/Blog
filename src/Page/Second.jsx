@@ -6,6 +6,7 @@ import '../Styles/Second/Second.css'
 import day from 'dayjs'
 import WX from '../Assets/WX.jpg'
 import img from '../Assets/Logo.jpg'
+import ReactMarkdown from 'react-markdown'
 const App = () => {
   const [messageApi, contextHolders] = message.useMessage();
   const info = () => {
