@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { Affix, Button, Drawer, Dropdown, Space } from 'antd';
-import { CaretDownOutlined, HomeOutlined, UserOutlined, ProfileOutlined, LikeOutlined, RedditOutlined, ClockCircleOutlined, DownOutlined } from '@ant-design/icons'
+import { Affix, Dropdown, Space } from 'antd';
+import { CaretDownOutlined, HomeOutlined, UserOutlined, ProfileOutlined, LikeOutlined, RedditOutlined, ClockCircleOutlined } from '@ant-design/icons'
 import { Link, Outlet } from 'react-router-dom'
 import '../Styles/Index/Index.css'
 import img from '../Assets/Logo.jpg'
@@ -56,9 +56,6 @@ const App = () => {
         </div>
         <Affix offsetTop={top} id='A'>
           <div className="nav">
-            <div className="user">
-              <img src={img} alt="" />
-            </div>
             <div className="uls">
               <ul>
                 <li>
@@ -76,12 +73,8 @@ const App = () => {
                 <li>
                   <Link to='demo'><RedditOutlined /><span id='spantext'>Demo</span></Link>
                 </li>
-                <li>
-                  <Link to='about'><UserOutlined />关于</Link>
-                </li>
               </ul>
             </div>
-
           </div>
         </Affix>
         <Outlet></Outlet>

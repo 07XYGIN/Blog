@@ -2,7 +2,6 @@ import { lazy } from 'react'
 import { createHashRouter } from 'react-router-dom'
 
 const Index = lazy(() => import('../Page/Index'))
-const About = lazy(() => import('../Page/About'))
 const Second = lazy(() => import('../Page/Second'))
 const Article = lazy(() => import('../Page/Article'))
 const Demo = lazy(() => import('../Page/Demo'))
@@ -18,10 +17,6 @@ const router = createHashRouter([
       {
         index: true,
         element: <Second></Second>,
-      },
-      {
-        path: '/about',
-        element: <About></About>,
       },
       {
         path: '/article',

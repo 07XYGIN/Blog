@@ -1,9 +1,11 @@
 html {
   font-size: 16px;
 }
-.m{
+
+.m {
   display: flex;
 }
+
 #spantext {
   font-size: 16px;
 }
@@ -17,35 +19,30 @@ html {
     height: 50px;
 
     img {
-      width: 50px;
-      height: 50px;
-      border-radius: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 40px;
     }
   }
 
   .nav {
     font-size: 16px;
-    display: flex;
-    justify-content: space-evenly;
     padding: 5px;
     height: 60px;
-    background: linear-gradient(to left, #807878, #4c2da3, #312553);
-
     ul {
       height: 50px;
       display: flex;
       justify-content: space-evenly;
       line-height: 50px;
-
       li {
         a {
-          color: bisque;
+          color: #e0e0e0;
           display: block;
           width: 100px;
           text-align: center;
-
+          margin-top: 5px;
           &:hover {
-            color: brown;
+            color: #000;
             background-color: aliceblue;
             border-radius: 50px;
             transition: .5s;
@@ -65,106 +62,130 @@ html {
 //媒体查询
 
 @media (max-width: 500px) {
-  .yd-b{
+  .yd-b {
     color: #fff;
     margin: 0 30px;
     width: 16px;
     height: 16px;
-    span{
+
+    span {
       color: #fff !important;
-      svg{
+
+      svg {
         width: 20px;
         height: 20px
       }
     }
   }
-  .ant-drawer{
+
+  .ant-drawer {
     max-width: 100vw;
   }
-  .dr{
+
+  .dr {
     width: 100px;
   }
-  #lis{
+
+  #lis {
     width: 100%;
     height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    li a{
+
+    li a {
       display: block;
       color: #000;
     }
   }
-  body{
+
+  body {
     background: #000 fixed;
   }
-  .container{
+
+  .container {
     max-width: 100%;
     margin: 0;
-    .yd{
+
+    .yd {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      h1{
+
+      h1 {
         color: #939090;
         margin: 0 0 0 5px;
       }
     }
-    #A{
+
+    #A {
       display: none;
     }
-    .m{
+
+    .m {
       display: none;
     }
-    .ms{
+
+    .ms {
       margin-top: 10px;
       width: 100%;
       background-color: #000;
-      .mc{
+
+      .mc {
         width: 100%;
-        
+
       }
     }
   }
-  .box{
+
+  .box {
     background-color: #000;
     position: static;
   }
-  .c{
+
+  .c {
     background-color: #000;
     border: none;
     color: #fff;
   }
-  .ks{
+
+  .ks {
     background-color: #a6a3a3;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .ms{
+  .ms {
     display: none;
   }
-  .yd{
+
+  .yd {
     display: none;
   }
+
   .container {
     max-width: 576px;
     margin: auto;
-    #A{
-      .nav{
+
+    #A {
+      .nav {
         font-size: 13px;
         max-width: 470px;
         display: flex;
         margin: auto;
         background: none;
-        .uls{
+
+        .uls {
           width: 100%;
-          ul{
+
+          ul {
             display: flex;
-            li{
+
+            li {
               max-width: 80px;
               margin-left: 10px;
-              a{
+
+              a {
                 max-width: 70px;
               }
             }
@@ -172,17 +193,19 @@ html {
         }
       }
     }
-    
+
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .ms{
+  .ms {
     display: none;
   }
-  .yd{
+
+  .yd {
     display: none;
   }
+
   .container {
     max-width: 768px;
     margin: auto;
@@ -190,21 +213,25 @@ html {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .ms{
+  .ms {
     display: none;
   }
-  .yd{
+
+  .yd {
     display: none;
   }
+
   .container .nav {
     max-width: 1200px;
   }
 }
-@media (min-width: 1199px){
-  .ms{
+
+@media (min-width: 1199px) {
+  .ms {
     display: none;
   }
-  .yd{
+
+  .yd {
     display: none;
   }
 }

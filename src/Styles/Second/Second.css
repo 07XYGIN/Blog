@@ -2,7 +2,17 @@
   width: 300px;
   margin: 20px 0;
   padding: 0;
-  background: linear-gradient(to left, #a98888, #aba3a3, #a49bbe);
+  background: linear-gradient(to right, #6c35de, #a364ff);
+  border: none;
+}
+
+.Card a {
+  color: #e0e0e0;
+}
+
+.Card a :hover {
+  color: #ffc7ff;
+  transition: .4s;
 }
 
 #body {
@@ -27,8 +37,17 @@ img {
   height: 150px;
 }
 
+#wx {
+  margin: 0 20px;
+}
+
 #wx:hover {
   color: greenyellow;
+  transition: .5s;
+}
+
+#qq:hover {
+  color: blue;
   transition: .5s;
 }
 
@@ -87,6 +106,8 @@ img {
   font-size: 12px;
   color: #000;
   position: absolute;
+  font-weight: 200;
+  color: #ffc7ff;
 }
 
 .icon {
@@ -96,14 +117,43 @@ img {
   left: 14px;
 }
 
-.right-box {
-  background: linear-gradient(to left, #a98888, #aba3a3, #a49bbe);
-}
-
-.k {
-  background: linear-gradient(to right, #a98888, #aba3a3, #a49bbe);
+.boxs {
+  background: linear-gradient(to right, #6c35de, #a364ff);
+  border: none;
 }
 
 #Aff {
   font-size: 16px;
+}
+
+.ant-card-head {
+  border: none !important;
+}
+
+.ant-card-head-title {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.ant-card-body {
+  color: #ffffff !important;
+}
+
+.userList {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userList img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.userList .userName {
+  width: 150px;
+  font-size: 22px;
+  text-align: center;
 }

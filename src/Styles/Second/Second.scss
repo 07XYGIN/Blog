@@ -1,93 +1,157 @@
-.Card{
+.Card {
   width: 300px;
   margin: 20px 0;
   padding: 0;
-  background: linear-gradient(to left, #a98888, #aba3a3,#a49bbe);  
+  background: linear-gradient(to right, #6c35de, #a364ff);
+  border: none;
+
+  a {
+    color: #e0e0e0;
+
+    :hover {
+      color: #ffc7ff;
+      transition: .4s;
+    }
+  }
 }
-#body{
+
+#body {
   padding: 0;
 }
-.svg1{
+
+.svg1 {
   width: 50px;
   height: 50px;
 }
-.lx{
+
+.lx {
   width: 60px;
   height: 25px;
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0 0 0;
 }
-img{
+
+img {
   width: 150px;
   height: 150px;
 }
-#wx{
-  &:hover{
+
+#wx {
+  margin: 0 20px;
+  &:hover {
     color: greenyellow;
     transition: .5s;
   }
 }
-.box{
+#qq{
+  &:hover{
+    color: blue;
+    transition: .5s;
+  }
+}
+.box {
   font-size: 16px;
   display: flex;
   position: sticky;
   top: 0;
 }
-.bq{
+
+.bq {
   display: flex;
   width: 200px;
-  height: 200px;  
+  height: 200px;
   flex-direction: column;
   justify-content: space-between;
   color: #000;
 }
-.right{
-  margin:20px;
+
+.right {
+  margin: 20px;
   width: 800px;
   height: 800px;
   display: flex;
   flex-direction: column;
-  
-  &-box{
+
+  &-box {
     margin: 20px 0 0 0;
     width: 100%;
   }
 }
-.pos{
+
+.pos {
   position: sticky;
   top: 0;
 }
-.Card1{
+
+.Card1 {
   width: 100%;
 }
-.left{
+
+.left {
   display: flex;
   flex-direction: column;
 }
-.boxbox{
+
+.boxbox {
   width: 100%;
 }
-.b{
+
+.b {
   width: 100%;
 }
-.date{
+
+.date {
   font-size: 12px;
   color: #000;
   position: absolute;
+  font-weight: 200;
+  color: #ffc7ff;
 }
-.icon{
+
+.icon {
   position: absolute;
   z-index: 999;
   top: 41px;
   left: 14px;
 }
-.right-box{
-  background: linear-gradient(to left, #a98888, #aba3a3,#a49bbe);  
+
+.boxs {
+  background: linear-gradient(to right, #6c35de, #a364ff);
+  border: none;
 }
-.k{
-  background: linear-gradient(to right, #a98888, #aba3a3, #a49bbe);
-}
-#Aff{
+
+#Aff {
   font-size: 16px;
+}
+
+.ant-card-head {
+  border: none !important;
+}
+
+.ant-card-head-title {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.ant-card-body {
+  color: #ffffff !important;
+}
+
+.userList {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .userName{
+    width: 150px;
+    font-size: 22px;
+    text-align: center;
+  }
 }
