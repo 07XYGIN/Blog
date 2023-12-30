@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { Card, Space, notification, Affix, Button, message } from 'antd';
+import { Card, Space, notification, Affix, message } from 'antd';
 import { GithubOutlined, WechatOutlined, QqOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 import '../Styles/Second/Second.css'
@@ -8,7 +8,6 @@ import WX from '../Assets/WX.jpg'
 import img from '../Assets/Logo.jpg'
 const App = () => {
   const [messageApi, contextHolders] = message.useMessage();
-
   const info = () => {
     messageApi.open({
       type: 'success',
@@ -67,9 +66,9 @@ const App = () => {
                 <p>文章数<span>(0)</span></p>
                 <p>笔记数<span>(0)</span></p>
                 <div className="lx">
-                  <Link to='https://github.com/07XYGIN'><GithubOutlined /></Link>
+                  <Link to='https://github.com/07XYGIN'  id='github'><GithubOutlined /></Link>
                   <WechatOutlined onClick={() => openNotification('topRight')} id='wx' />
-                  <QqOutlined id='qq' onClick={info}/>
+                  <QqOutlined id='qq' onClick={info} />
                   {contextHolders}
                 </div>
               </Card>
@@ -78,16 +77,16 @@ const App = () => {
               </Context.Provider>
             </Space>
             <Space className='pos'>
-              <Card title={`分类`} hoverable={true} className='Card'>
+              <Card title={`分类`} className='Card'>
                 <div className="bq">
-                  <Link><span>CSS(0)</span></Link>
-                  <Link><span>JS(0)</span></Link>
-                  <Link><span>TS(0)</span></Link>
-                  <Link><span>Vue(0)</span></Link>
-                  <Link><span>Vue3(0)</span></Link>
-                  <Link><span>React(0)</span></Link>
-                  <Link><span></span></Link>
-                  <Link><span></span></Link>
+                  <Link to='CssList'><span>CSS(0)</span></Link>
+                  <Link to='JsList'><span>JS(0)</span></Link>
+                  <Link to='TsList'><span>TS(0)</span></Link>
+                  <Link to='VueList'><span>Vue(0)</span></Link>
+                  <Link to='Vue3List'><span>Vue3(0)</span></Link>
+                  <Link to='JsxList'><span>React(0)</span></Link>
+                  <Link to=''><span></span></Link>
+                  <Link to=''><span></span></Link>
                 </div>
               </Card>
             </Space>

@@ -4,7 +4,6 @@ import { Affix, Dropdown, Space } from 'antd';
 import { CaretDownOutlined, HomeOutlined, UserOutlined, ProfileOutlined, LikeOutlined, RedditOutlined, ClockCircleOutlined } from '@ant-design/icons'
 import { Link, Outlet } from 'react-router-dom'
 import '../Styles/Index/Index.css'
-import img from '../Assets/Logo.jpg'
 const App = () => {
   const items = [
     {

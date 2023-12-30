@@ -50,6 +50,18 @@ img {
     transition: .5s;
   }
 }
+#github{
+  &:hover{
+    color: #000;
+    transition: .5s;
+  }
+  #githubIcon{
+    &:hover{
+      color: #000 !important;
+      transition: .5s;
+    }
+  }
+}
 .box {
   font-size: 16px;
   display: flex;
