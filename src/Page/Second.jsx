@@ -33,14 +33,12 @@ const App = () => {
         </Context.Consumer>,
       placement,
       icon: <WechatOutlined />,
-
     });
   };
   useEffect(() => {
     settTime(new Date());
     const time = day(Time).format('YYYY-MM-DD HH:mm:ss');
   }, []);
-
   return (
     <div className='box'>
       <div className="ms">
@@ -107,5 +105,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;

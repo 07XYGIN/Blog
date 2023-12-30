@@ -1,11 +1,7 @@
 #bboxxxx {
-  display: flex;
   width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   .Cbox{
-    width: 500px;
+
     background: linear-gradient(to right, #6c35de, #a364ff);
     border: none;
     color: #ffc7ff;
@@ -14,4 +10,21 @@
       transition: .2s;
     }
   }
+}
+.a{
+  width: 100%;
+}
+.asss{
+  display: flex;
+}
+a{
+  width: 500px;
+}
+.s{
+  display: flex;
+}
+.vmp{
+  width: 500px;
+  height: 320px;
+  margin-bottom: 30px;
 }
