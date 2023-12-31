@@ -6,7 +6,6 @@ import '../Styles/Second/Second.css'
 import day from 'dayjs'
 import WX from '../Assets/WX.jpg'
 import img from '../Assets/Logo.jpg'
-import ReactMarkdown from 'react-markdown'
 import Cards from '../components/Cards';
 const App = () => {
   const [messageApi, contextHolders] = message.useMessage();
@@ -72,12 +71,12 @@ const App = () => {
             <Space className='pos'>
               <Card title={`分类`} className='Card'>
                 <div className="bq">
-                  <Link to='CssList'><span>CSS(0)</span></Link>
+                  {/* <Link to='CssList'><span>CSS(0)</span></Link>
                   <Link to='JsList'><span>JS(0)</span></Link>
                   <Link to='TsList'><span>TS(0)</span></Link>
                   <Link to='VueList'><span>Vue(0)</span></Link>
                   <Link to='Vue3List'><span>Vue3(0)</span></Link>
-                  <Link to='JsxList'><span>React(0)</span></Link>
+                  <Link to='JsxList'><span>React(0)</span></Link> */}
                 </div>
               </Card>
             </Space>
