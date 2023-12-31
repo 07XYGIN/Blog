@@ -7,6 +7,7 @@ import day from 'dayjs'
 import WX from '../Assets/WX.jpg'
 import img from '../Assets/Logo.jpg'
 import ReactMarkdown from 'react-markdown'
+import Cards from '../components/Cards';
 const App = () => {
   const [messageApi, contextHolders] = message.useMessage();
   const info = () => {
@@ -35,22 +36,15 @@ const App = () => {
       icon: <WechatOutlined />,
     });
   };
+  let arr = [
+    {id:1,name:'笔记-笔记标题',time:'2024-1-1',text:'笔记内容'}
+  ]
   useEffect(() => {
     settTime(new Date());
     const time = day(Time).format('YYYY-MM-DD HH:mm:ss');
   }, []);
   return (
     <div className='box'>
-      <div className="ms">
-        <Link to='/MySQL'>
-          <Space direction="vertical" size={16} className='right-box'>
-            <Card title={`MySQL基础`} hoverable={true} className='ks'>
-              <p className="d"></p>
-              <p className='date'>更新时间: 2023-12-19</p>
-            </Card>
-          </Space>
-        </Link>
-      </div>
       <div className="m">
         <Affix offsetTop={top} id="Aff">
           <div className="left">
@@ -84,22 +78,13 @@ const App = () => {
                   <Link to='VueList'><span>Vue(0)</span></Link>
                   <Link to='Vue3List'><span>Vue3(0)</span></Link>
                   <Link to='JsxList'><span>React(0)</span></Link>
-                  <Link to=''><span></span></Link>
-                  <Link to=''><span></span></Link>
                 </div>
               </Card>
             </Space>
           </div>
         </Affix>
         <div className="right">
-          <Link to='/MySQL'>
-            <Space direction="vertical" size={16} className='right-box'>
-              <Card title={`MySQL基础`} hoverable={true} className='boxs'>
-                <p className="d"></p>
-                <p className='date'>更新时间: 2023-12-19</p>
-              </Card>
-            </Space>
-          </Link>
+          <Cards arr={arr}></Cards>
         </div>
       </div>
     </div>
