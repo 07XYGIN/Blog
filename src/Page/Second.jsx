@@ -44,6 +44,7 @@ const App = () => {
   }, []);
   return (
     <div className='box'>
+      {/* PC */}
       <div className="m">
         <Affix offsetTop={top} id="Aff">
           <div className="left">
@@ -82,10 +83,9 @@ const App = () => {
             </Space>
           </div>
         </Affix>
-        <div className="right">
-          <Cards arr={arr}></Cards>
-        </div>
       </div>
+      {/* YD */}
+      
     </div>
   );
 };
